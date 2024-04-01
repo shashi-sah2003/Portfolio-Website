@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bc7b0e6b37.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <Span>Shashi</Span> Sah <br>from Delhi, India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!---------------- ABOUT----------- -->
+<div id="about">
+    <div id="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hey there, I am Shashi Sah, an Undergraduate Student pursuing my Btech
+                    from Delhi Technological University, Delhi, India. I am really passionate 
+                    about AI/ML, Development and how we can combine these two to solve real world
+                    challenging problems.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>HTML, CSS, JS, Django, Flask, FASTapi</li>
+                        <li><span>Mobile App Development</span><br>Flutter, Node.js, Mysql</li>
+                        <li><span>AI/ML</span><br>Computer Vision, NLP, Tensorflow, Pytorch,</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>July 2023- Mar 2024</span><br>Developer Intern at Gabbit</li>
+                        <li><span>Sep 2023- Feb 2024</span><br>Research Intern at Samsung lab</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-present</span><br>Delhi Technological University</li>
+                        <li><span>2022</span><br>High School at APS Dhaula Kuan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------SERVICES----------------------- -->
+
+<div id="service">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Mobile App Development</h2>
+                <p>Creating innovative and user-friendly mobile applications tailored to your specific needs.</p>
+                <a href="#portfolio">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Web App Development</h2>
+                <p>Building responsive web applications with modern technologies to enhance your online presence.</p>
+                <a href="#portfolio">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>AI/ML</h2>
+                <p>Utilizing advanced machine learning algorithms to develop intelligent solutions for complex problems.</p>
+                <a href="#portfolio">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------------PORTFOLIO----------------------------- -->
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>KrishiRaksha Mobile App</h3>
+                    <p>An innovative solution to tackle climate change, which affects crop growth,
+                        designed a mobile app which lets farmers upload crop images for claiming
+                        insurance (B2G business model)with a model deployed for classifying crops
+                        into 5 categories.
+                        </p>
+                    <a href="https://github.com/shashi-sah2003/KrishiRaksha/tree/master"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Gentextify Chrome Extension</h3>
+                    <p>Developed as a Chrome extension, it specializes in determining whether the 
+                        entered text is generated by AI or not, providing the result as a percentage. </p>
+                    <a href="https://github.com/shashi-sah2003/GenTextify"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Spotify2Mp3 Music Downloader</h3>
+                    <p>Developed an interface where users can input their Spotify playlist, and in 
+                        the backend, it utilizes Spotify and YouTube APIs to download the songs in MP3 format." </p>
+                    <a href="https://github.com/shashi-sah2003/Spotify2Mp3"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work additional-work" style="display: none;">
+                <img src="images/work-4.png">
+                <div class="layer">
+                    <h3>ChattoBotto</h3>
+                    <p>ChattoBotto, a reliable medical chatbot, deliversinstant and precise in‐
+                        formation to address all your health‐related queries with efficiency and
+                        accuracy trained on WhatsApp chats. </p>
+                    <a href="https://github.com/shashi-sah2003/CHATTOBOTTO"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn" id="see-more-btn">See more</a>
+    </div>
+</div>
+
+<!------------CONTACT------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>sah.shashi2003@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> 9667539064</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/shashi__sah"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/shashi-sah-56aa77175/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/shashi.sah2002/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/_shashi_sah/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.github.com/shashi-sah2003"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Shashisah_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyCsjGvsBEizLjR4uQRSaePb1rPD2f_l8yy_BTbfgLaHDGXIeOC0xjjHOzyZiLBy6TeOw/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script>
+    const seeMoreButton = document.getElementById("see-more-btn");
+    const additionalWorkItems = document.querySelectorAll(".additional-work");
+
+    seeMoreButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        
+        additionalWorkItems.forEach(item => {
+            if (item.style.display === "none") {
+                item.style.display = "block";
+            } else {
+                item.style.display = "none";
+            }
+        });
+
+        if (seeMoreButton.innerText === "See more") {
+            seeMoreButton.innerText = "See less";
+        } else {
+            seeMoreButton.innerText = "See more";
+        }
+    });
+
+</script>
+
+</body>
+</html>
