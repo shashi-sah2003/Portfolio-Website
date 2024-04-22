@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background: #000000;
+    background: #000;
     color: #fff;
 }
 
@@ -370,7 +370,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/phoneBackground.png);
+        background-image: url(images/phoneBackground.jpg);
         background-size: auto 100%;
         background-position: right center;
         background-repeat: no-repeat;
